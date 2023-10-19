@@ -6,5 +6,9 @@ Este repositório armazena somente conteúdos referente ao curso de pós da grad
 * 02 - calcula-uber - Pagina que simula o calculo de um app de corrida.
 
 ## Aula 02
+* mini_browse - Pagina que simula um "Mini navegador" e abrangendo os conceitos de fila e pilha.
+* Fila - Simulador de Fila utilizando uma classe propria.
+* Pilha - Simulador de Pilha utilizando uma classe propria.
+* Map-e-Set - Explorando os objetos Set e Map do Javascript.
 
 ## Aula 03

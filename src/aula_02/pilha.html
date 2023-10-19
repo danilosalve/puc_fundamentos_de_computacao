@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilha</title>
+</head>
+<body></body>
+<script>
+    console.log('Pilha');
+    class BrowserHistoryStack {
+        constructor() {
+            this.cursor = 0;
+            this.data = [];
+        }
+
+        push(item) {
+            this.cursor++;
+            this.data.push(item);
+        }
+        
+        back() {
+            this.cursor--;            
+            // this.data.pop();
+        }
+
+        clear() {
+            this.data = [];
+        }
+
+        current(){
+            return this.data[this.cursor - 1];
+        }
+
+        print(){
+            console.log('cursos: ', this.cursor);
+            console.log('items atuais: ', this.data);
+        }
+        
+    }    
+    const history = new BrowserHistoryStack();
+    history.push('https://google.com');
+    history.push('https://youtube.com');
+    history.push('https://facebook.com');
+    history.print();
+    history.back();
+    history.print();
+    console.log(history.current());
+</script>
+</html>
