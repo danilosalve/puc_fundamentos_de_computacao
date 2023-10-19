@@ -14,4 +14,4 @@ Este repositório armazena somente conteúdos referente ao curso de pós da grad
 ## Aula 03
 * nodo - Trabalhando com Nodos (nos);
 * fatorial - Calculando a fatorial utilizando recursividade;
-* fibonacci;
+* fibonacci - trabalhando com a sequencia de fibonnaci;
