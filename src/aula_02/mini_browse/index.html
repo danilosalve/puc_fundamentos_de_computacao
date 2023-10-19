@@ -1,0 +1,55 @@
+<html lang="pt-br">
+  <head>
+    <title>Meu Mini Navegador</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="content-language" content="pt-br" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="author" content="Danilo Otavio Lima Salve" />
+    <meta name="description" content="Pagina que simula um navegador WEB." />
+    <meta
+      name="keywords"
+      content="sites, web, desenvolvimento, fundamentos_de_algoritmos, fundamentos_de_computacao, puc_rs, pos, puc, mini_navegador"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+        <main>
+        <header>
+            <div class="close-area">
+                <input placeholder="https://..." value="https://mariosouto.com">
+            </div>
+        </header>
+        <iframe src="https://mariosouto.com"></iframe>
+    </main>
+  </body>
+  <script>
+     /*Aba do Navegador*/
+     var aba1 = {
+      titulo: 'Google',
+      url: 'https://www.google.com/'
+    }
+    var aba2 = {
+      titulo: 'Calculadora de Idade',
+      url: '../aula_01/01-calcula-idade.html'
+    }
+    var aba3 = {
+      titulo: 'Calculadora UBER',
+      url: '../aula_01/02-calcula-uber.html'
+    }
+
+    var abas = [
+      aba1,
+      aba2,
+      aba3
+    ];
+    
+    document.body.innerHTML += '<h6>Ultimas paginas acessadas</h6>';
+    for (aba of abas) {
+      var valorAtualDoHTML = document.body.innerHTML;
+      document.body.innerHTML = valorAtualDoHTML + `<li><a href="${aba.url}">${aba.titulo}<a/></li>`
+    }
+    
+    </script>
+  </script>
+</html>
