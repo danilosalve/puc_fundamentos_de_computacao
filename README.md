@@ -3,6 +3,8 @@ Este repositório armazena somente conteúdos referente ao curso de pós da grad
 
 ## Aula 01
 * 01 - calcula-idade - Pagina simples que calcula a idade do usuario.
+* 02 - calcula-uber - Pagina que simula o calculo de um app de corrida.
+
 ## Aula 02
 
 ## Aula 03

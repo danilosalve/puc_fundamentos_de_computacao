@@ -1,0 +1,67 @@
+<html lang="pt-br">
+  <head>
+    <title>App de Corrida</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="content-language" content="pt-br" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="author" content="Danilo Otavio Lima Salve" />
+    <meta
+      name="description"
+      content="Esta página simula o calculo preço de um corrida"
+    />
+    <meta
+      name="keywords"
+      content="sites, web, desenvolvimento, fundamentos_de_algoritmos, fundamentos_de_computacao, puc_rs, pos, puc, calculo, uber, simulacao"
+    />
+  </head>
+  <body>
+    <form>
+      <input placeholder="Distancia em KM" id="campoDistanciaEmKM" /><br />
+      <input placeholder="Tempo em minutos" id="campoTempoEmMinutos" /><br />
+      <button onclick="calculaCorrida();">Calcular</button>
+    </form>
+  </body>
+  <script>
+    function formataMoeda(valor) {
+      return valor.toFixed(2).replace(".", ",");
+    }
+
+    function calculaCorrida() {
+      var temValorDaDistancia = campoDistanciaEmKM.value !== "";
+      var temTempoEmMinutos = campoTempoEmMinutos.value !== "";
+
+      if (!temValorDaDistancia) {
+        alert("Distancia em KM não foi preenchido!!!");
+        return;
+      }
+
+      if (!temTempoEmMinutos) {
+        alert("Tempo em minutos não foi preenchido!!!");
+        return;
+      }
+
+      var tarifaDinamica = 1.4;
+      var distanciaEmKM = campoDistanciaEmKM.value * tarifaDinamica;
+      var tempoEmMinutos = campoTempoEmMinutos.value * 0.26;
+      var valorDaCorrida = distanciaEmKM + tempoEmMinutos;
+      alert(`O valor da corrida é: ${formataMoeda(valorDaCorrida)}`);
+    }
+  </script>
+  <style>
+    input {
+      width: 100%;
+      margin: 8px 0;
+      padding: 12px 20px;
+    }
+
+    button {
+      background-color: DodgerBlue;
+      width: 100%;
+      padding: 8px 10px;
+    }
+
+    body {
+      background-color: #e6f1f5;
+    }
+  </style>
+</html>
