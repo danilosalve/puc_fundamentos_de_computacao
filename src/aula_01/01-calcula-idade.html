@@ -1,0 +1,24 @@
+<html lang="pt-br">
+  <head>
+    <title>Calculadora de Idade</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="content-language" content="pt-br" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="author" content="Danilo Otavio Lima Salve" />
+    <meta
+      name="description"
+      content="Esta página calcula a idade do usuario capturando o dado de um input."
+    />
+    <meta
+      name="keywords"
+      content="sites, web, desenvolvimento, fundamentos_de_algoritmos, fundamentos_de_computacao, puc_rs, pos, puc"
+    />
+  </head>
+  <body>
+    <h1 style="background-color:DodgerBlue;">Programa que calcula a idade</h1>    
+  </body>
+  <script>
+    var year = new Date().getFullYear();
+    document.write(`A sua idade é: ${year - prompt('Qual ano você nasceu?')}`);
+  </script>
+</html>
