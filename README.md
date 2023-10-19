@@ -15,3 +15,5 @@ Este repositório armazena somente conteúdos referente ao curso de pós da grad
 * nodo - Trabalhando com Nodos (nos);
 * fatorial - Calculando a fatorial utilizando recursividade;
 * fibonacci - trabalhando com a sequencia de fibonnaci;
+* Index - Programa que avalia se numero e par ou impar;
+* Set - Continuação do conceito de set.
